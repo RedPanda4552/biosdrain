@@ -6,11 +6,8 @@ Builds are under the Actions tab.
  - ROM1
  - ROM2 (Only on Chinese consoles)
  - EROM
-
-### Soon to detect and dump
  - NVM
  - MEC
-
 
 ### Notes
 
