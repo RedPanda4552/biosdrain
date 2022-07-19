@@ -58,7 +58,7 @@ void dump_init(u32 use_usb)
 		dump_jobs[1].dump_fname = "BIOS.rom1";
 		dump_jobs[1].dump_func = dump_rom1_func;
 		dump_jobs[1].dump_size = g_hardwareInfo.ROMs[1].size;
-		dump_jobs[1].enabled = g_hardwareInfo.ROMs[1].IsExists;
+		dump_jobs[1].enabled = 0; //g_hardwareInfo.ROMs[1].IsExists;
 	}
 	// ROM2
 	{
@@ -66,7 +66,7 @@ void dump_init(u32 use_usb)
 		dump_jobs[2].dump_fname = "BIOS.rom2";
 		dump_jobs[2].dump_func = dump_rom2_func;
 		dump_jobs[2].dump_size = g_hardwareInfo.ROMs[2].size;
-		dump_jobs[2].enabled = g_hardwareInfo.ROMs[2].IsExists;
+		dump_jobs[2].enabled = 0; //g_hardwareInfo.ROMs[2].IsExists;
 	}
 	// EROM
 	{
@@ -74,7 +74,7 @@ void dump_init(u32 use_usb)
 		dump_jobs[3].dump_fname = "BIOS.erom";
 		dump_jobs[3].dump_func = dump_erom_func;
 		dump_jobs[3].dump_size = g_hardwareInfo.erom.size;
-		dump_jobs[3].enabled = g_hardwareInfo.erom.IsExists;
+		dump_jobs[3].enabled = 0;// g_hardwareInfo.erom.IsExists;
 	}
 	// NVM
 	{
@@ -82,7 +82,7 @@ void dump_init(u32 use_usb)
 		dump_jobs[4].dump_fname = "BIOS.nvm";
 		dump_jobs[4].dump_func = dump_nvm_func;
 		dump_jobs[4].dump_size = 1024;
-		dump_jobs[4].enabled = g_hardwareInfo.DVD_ROM.IsExists;
+		dump_jobs[4].enabled = 0; //g_hardwareInfo.DVD_ROM.IsExists;
 	}
 	// MEC
 	{
@@ -90,7 +90,7 @@ void dump_init(u32 use_usb)
 		dump_jobs[5].dump_fname = "BIOS.mec";
 		dump_jobs[5].dump_func = dump_mec_func;
 		dump_jobs[5].dump_size = 4;
-		dump_jobs[5].enabled = g_hardwareInfo.DVD_ROM.IsExists;
+		dump_jobs[5].enabled = 0; //g_hardwareInfo.DVD_ROM.IsExists;
 	}
 }
 
